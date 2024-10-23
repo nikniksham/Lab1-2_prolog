@@ -124,8 +124,7 @@ cheaperOrEq(Card1, Card2) :-
         (
             cardCost(Card1, Cost1),
             cardCost(Card2, Cost2),
-            Cost1 =< Cost2,
-            Card1 \= Card2
+            Cost1 =< Cost2
         )
     -> true ; false
     ).
