@@ -1,5 +1,11 @@
 % База знаний по игре Clash Royale
 
+% Редкость
+rarity("Common").
+rarity("Rare").
+rarity("Epic").
+rarity("Legendary").
+
 % Тип карты
 type("Troops").
 type("Buildings").
@@ -30,7 +36,7 @@ card("Zap").
 
 % Редкость карты
 cardRarity("Archers", "Common").
-cardRarity("Baby Dragon", "Rare").
+cardRarity("Baby Dragon", "Epic").
 cardRarity("Balloon", "Epic").
 cardRarity("Giant", "Rare").
 cardRarity("Minions", "Common").
@@ -105,7 +111,7 @@ canAttack(Card1, Card2) :-
         cardType(Card2, "Troops"), (cardTarget(Card1, "All"); cardPlacement(Card2, "Ground"), cardTarget(Card1, "Ground"))
     ).
 
-% Проверка, сможет карта отвлечь от нападения
+% Проверка, сможет карта отвлечь от нападения (отвлечь внимание на себя)
 canDefense(Def, Attack) :-
     card(Def), card(Attack), not(cardType(Attack, "Spells")),
     (
@@ -129,7 +135,7 @@ cheaperOrEq(Card1, Card2) :-
     -> true ; false
     ).
 
-% Проверка, что мы сможем контратаковать
+% Проверка, что мы сможем контратаковать (контратаковать - значит атаковать, а потом пойти в наступление)
 canCounterattack(Def, Att) :-
     card(Def), card(Att), not(cardType(Def, "Spells"); cardType(Def, "Buildings"); cardType(Att, "Spells")),
     (
@@ -137,7 +143,7 @@ canCounterattack(Def, Att) :-
     -> true; false
     ).
 
-% Проверка, что нам выгодно отвлекать внимание
+% Проверка, что нам выгодно отвлекать внимание (карта для отвлечения внимания не дороже нападающей карты)
 profitableToDistract(Def, Att) :-
     card(Def), card(Att), not(cardType(Att, "Spells")),
     (
