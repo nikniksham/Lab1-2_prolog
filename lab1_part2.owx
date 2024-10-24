@@ -1,0 +1,632 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://se.ifmo.ru/ontologu/ontology/Shamkov/lab1"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://se.ifmo.ru/ontologu/ontology/Shamkov/lab1">
+    <Prefix name="" IRI="http://se.ifmo.ru/ontologu/ontology/Shamkov/lab1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Attribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Card"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Placement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Target"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAttribute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPlacement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRarity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTarget"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Air"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AllTarget"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Archers"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Baby_Dragon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Balloon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Buildings"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BuildingsTarget"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cannon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Common"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Epic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Giant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ground"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GroundTarget"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Inferno_Tower"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Legendary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Magic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Minions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prince"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rare"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sparky"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spells"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Troops"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zap"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#6"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Cost"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Placement"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rarity"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Target"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Type"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Placement"/>
+        <NamedIndividual IRI="#Air"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Target"/>
+        <NamedIndividual IRI="#AllTarget"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Card"/>
+        <NamedIndividual IRI="#Archers"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Card"/>
+        <NamedIndividual IRI="#Baby_Dragon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Card"/>
+        <NamedIndividual IRI="#Balloon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Type"/>
+        <NamedIndividual IRI="#Buildings"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Target"/>
+        <NamedIndividual IRI="#BuildingsTarget"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Card"/>
+        <NamedIndividual IRI="#Cannon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rarity"/>
+        <NamedIndividual IRI="#Common"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rarity"/>
+        <NamedIndividual IRI="#Epic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Card"/>
+        <NamedIndividual IRI="#Giant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Placement"/>
+        <NamedIndividual IRI="#Ground"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Target"/>
+        <NamedIndividual IRI="#GroundTarget"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Card"/>
+        <NamedIndividual IRI="#Inferno_Tower"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rarity"/>
+        <NamedIndividual IRI="#Legendary"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Placement"/>
+        <NamedIndividual IRI="#Magic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Card"/>
+        <NamedIndividual IRI="#Minions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Card"/>
+        <NamedIndividual IRI="#Prince"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Card"/>
+        <NamedIndividual IRI="#Rage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rarity"/>
+        <NamedIndividual IRI="#Rare"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Card"/>
+        <NamedIndividual IRI="#Sparky"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Type"/>
+        <NamedIndividual IRI="#Spells"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Type"/>
+        <NamedIndividual IRI="#Troops"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Card"/>
+        <NamedIndividual IRI="#Zap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cost"/>
+        <NamedIndividual IRI="#2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cost"/>
+        <NamedIndividual IRI="#3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cost"/>
+        <NamedIndividual IRI="#4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cost"/>
+        <NamedIndividual IRI="#5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cost"/>
+        <NamedIndividual IRI="#6"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#Archers"/>
+        <NamedIndividual IRI="#3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlacement"/>
+        <NamedIndividual IRI="#Archers"/>
+        <NamedIndividual IRI="#Ground"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRarity"/>
+        <NamedIndividual IRI="#Archers"/>
+        <NamedIndividual IRI="#Common"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Archers"/>
+        <NamedIndividual IRI="#AllTarget"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Archers"/>
+        <NamedIndividual IRI="#Troops"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#Baby_Dragon"/>
+        <NamedIndividual IRI="#4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlacement"/>
+        <NamedIndividual IRI="#Baby_Dragon"/>
+        <NamedIndividual IRI="#Air"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRarity"/>
+        <NamedIndividual IRI="#Baby_Dragon"/>
+        <NamedIndividual IRI="#Epic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Baby_Dragon"/>
+        <NamedIndividual IRI="#AllTarget"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Baby_Dragon"/>
+        <NamedIndividual IRI="#Troops"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#Balloon"/>
+        <NamedIndividual IRI="#5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlacement"/>
+        <NamedIndividual IRI="#Balloon"/>
+        <NamedIndividual IRI="#Air"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRarity"/>
+        <NamedIndividual IRI="#Balloon"/>
+        <NamedIndividual IRI="#Epic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Balloon"/>
+        <NamedIndividual IRI="#BuildingsTarget"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Balloon"/>
+        <NamedIndividual IRI="#Epic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#Cannon"/>
+        <NamedIndividual IRI="#3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlacement"/>
+        <NamedIndividual IRI="#Cannon"/>
+        <NamedIndividual IRI="#Ground"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRarity"/>
+        <NamedIndividual IRI="#Cannon"/>
+        <NamedIndividual IRI="#Common"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Cannon"/>
+        <NamedIndividual IRI="#GroundTarget"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Cannon"/>
+        <NamedIndividual IRI="#Buildings"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#Giant"/>
+        <NamedIndividual IRI="#5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlacement"/>
+        <NamedIndividual IRI="#Giant"/>
+        <NamedIndividual IRI="#Ground"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRarity"/>
+        <NamedIndividual IRI="#Giant"/>
+        <NamedIndividual IRI="#Rare"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Giant"/>
+        <NamedIndividual IRI="#BuildingsTarget"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Giant"/>
+        <NamedIndividual IRI="#Troops"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#Inferno_Tower"/>
+        <NamedIndividual IRI="#5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlacement"/>
+        <NamedIndividual IRI="#Inferno_Tower"/>
+        <NamedIndividual IRI="#Ground"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRarity"/>
+        <NamedIndividual IRI="#Inferno_Tower"/>
+        <NamedIndividual IRI="#Rare"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Inferno_Tower"/>
+        <NamedIndividual IRI="#AllTarget"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Inferno_Tower"/>
+        <NamedIndividual IRI="#Buildings"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#Minions"/>
+        <NamedIndividual IRI="#3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlacement"/>
+        <NamedIndividual IRI="#Minions"/>
+        <NamedIndividual IRI="#Air"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRarity"/>
+        <NamedIndividual IRI="#Minions"/>
+        <NamedIndividual IRI="#Common"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Minions"/>
+        <NamedIndividual IRI="#AllTarget"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Minions"/>
+        <NamedIndividual IRI="#Troops"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#Prince"/>
+        <NamedIndividual IRI="#5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlacement"/>
+        <NamedIndividual IRI="#Prince"/>
+        <NamedIndividual IRI="#Ground"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRarity"/>
+        <NamedIndividual IRI="#Prince"/>
+        <NamedIndividual IRI="#Epic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Prince"/>
+        <NamedIndividual IRI="#GroundTarget"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Prince"/>
+        <NamedIndividual IRI="#Troops"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#Rage"/>
+        <NamedIndividual IRI="#2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlacement"/>
+        <NamedIndividual IRI="#Rage"/>
+        <NamedIndividual IRI="#Magic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRarity"/>
+        <NamedIndividual IRI="#Rage"/>
+        <NamedIndividual IRI="#Epic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Rage"/>
+        <NamedIndividual IRI="#AllTarget"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Rage"/>
+        <NamedIndividual IRI="#Spells"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#Sparky"/>
+        <NamedIndividual IRI="#6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlacement"/>
+        <NamedIndividual IRI="#Sparky"/>
+        <NamedIndividual IRI="#Ground"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRarity"/>
+        <NamedIndividual IRI="#Sparky"/>
+        <NamedIndividual IRI="#Legendary"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Sparky"/>
+        <NamedIndividual IRI="#GroundTarget"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Sparky"/>
+        <NamedIndividual IRI="#Troops"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#Zap"/>
+        <NamedIndividual IRI="#2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlacement"/>
+        <NamedIndividual IRI="#Zap"/>
+        <NamedIndividual IRI="#Magic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRarity"/>
+        <NamedIndividual IRI="#Zap"/>
+        <NamedIndividual IRI="#Common"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Zap"/>
+        <NamedIndividual IRI="#AllTarget"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Zap"/>
+        <NamedIndividual IRI="#Spells"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCost"/>
+        <ObjectProperty IRI="#hasAttribute"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPlacement"/>
+        <ObjectProperty IRI="#hasAttribute"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRarity"/>
+        <ObjectProperty IRI="#hasAttribute"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTarget"/>
+        <ObjectProperty IRI="#hasAttribute"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasType"/>
+        <ObjectProperty IRI="#hasAttribute"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasCost"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasPlacement"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasRarity"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasTarget"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasType"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCost"/>
+        <Class IRI="#Card"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPlacement"/>
+        <Class IRI="#Card"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRarity"/>
+        <Class IRI="#Card"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTarget"/>
+        <Class IRI="#Card"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#Card"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCost"/>
+        <Class IRI="#Cost"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPlacement"/>
+        <Class IRI="#Placement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRarity"/>
+        <Class IRI="#Rarity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTarget"/>
+        <Class IRI="#Target"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#Type"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
